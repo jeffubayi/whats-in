@@ -22,7 +22,7 @@ import NoMovieAvailable from "../components/emptyMovie";
 const Home = () => {
   //create the state for loading  movies
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("james bond");
   const [errorAlert, setErrorAlert] = useState(false);
 
   //handle movie search by name
@@ -52,10 +52,8 @@ const Home = () => {
     localStorage.setItem("movieId", favoriteList);
   };
   //get favorite movies
-  if (typeof window !== "undefined") {
-    // Perform localStorage action
-    let favoriteMovieId = localStorage.getItem("movieId");
-  }
+  let favoriteMovieId =
+    typeof window !== "undefined" ? localStorage.getItem("movieId") : null;
 
   return (
     <>
