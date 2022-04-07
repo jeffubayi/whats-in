@@ -59,6 +59,7 @@ const Home = () => {
     <>
       <Head>
         <title>Search</title>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
       </Head>
       {errorAlert && <Alert />}
       <PageWrapper>

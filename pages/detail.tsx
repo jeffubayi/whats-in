@@ -87,6 +87,7 @@ const Detail = () => {
     <>
       <Head>
         <title>Details</title>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
       </Head>
       {errorAlert && <Alert />}
       {loader ? (
