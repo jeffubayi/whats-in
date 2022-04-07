@@ -33,8 +33,10 @@ const Home = () => {
       const response = await axios.get(url);
       const movieList = response.data.Search;
       setMovies(movieList);
+      console.log(`moviesList `, movieList);
     } catch (error) {
       error && setErrorAlert(true);
+      console.log(`error =>`, error);
     }
   };
   //handle text input value change
