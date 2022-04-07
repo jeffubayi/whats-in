@@ -19,34 +19,14 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Link from "next/link";
 import NoMovieAvailable from "../components/emptyMovie";
 
-interface movieCard {
-  length: any;
-  map(arg0: (movie: any, index: any) => JSX.Element): React.ReactNode;
-}
-
-interface movieType {
-  length: any;
-  map(arg0: (movie: any, index: any) => JSX.Element): React.ReactNode;
-  movies: [
-    {
-      imdbID: string;
-      Title: string;
-      Poster: string;
-      Year: string;
-    }
-  ];
-}
-
 const Home = () => {
   //create the state for loading  movies
-  const [movies, setMovies] = useState<movieType>({
-    movies: [{ imdbID: ""; Title: ""; Poster: ""; Year: ""; }],
-  });
+  const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState("");
   const [errorAlert, setErrorAlert] = useState(false);
 
   //handle movie search by name
-  const searchMovies = async (event: any) => {
+  const searchMovies = async (event) => {
     event.preventDefault();
     const url = `http://www.omdbapi.com/?s=${query}&apikey=d3e8c483`;
     try {
@@ -58,22 +38,22 @@ const Home = () => {
     }
   };
   //handle text input value change
-  function handleChange(event: any) {
+  function handleChange(event) {
     setQuery(event.target.value);
   }
 
   //set favorite movies
-  const saveFavoriteMovie = (movieId: string) => {
-    let favoriteList: any = [];
+  const saveFavoriteMovie = (movieId) => {
+    let favoriteList = [];
     let favMovieId = movieId;
     favoriteList.push(favMovieId);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("movieId", favoriteList);
-    }
+    localStorage.setItem("movieId", favoriteList);
   };
   //get favorite movies
-  let favoriteMovieId =
-    typeof window !== "undefined" ? localStorage.getItem("movieId") : null;
+  if (typeof window !== "undefined") {
+    // Perform localStorage action
+    let favoriteMovieId = localStorage.getItem("movieId");
+  }
 
   return (
     <>
@@ -104,7 +84,7 @@ const Home = () => {
             </FormWrapper>
           </Grid>
           {movies?.length ? (
-            movies?.map((movie: any, index: any) => {
+            movies?.map((movie, index) => {
               return (
                 <Grid key={index} item xs={6} md={2}>
                   <Link
