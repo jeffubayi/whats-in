@@ -35,7 +35,7 @@ const Home = () => {
       setMovies(movieList);
       console.log(`moviesList `, movieList);
     } catch (error) {
-      error && setErrorAlert(true);
+      setErrorAlert(true);
       console.log(`error =>`, error);
     }
   };
