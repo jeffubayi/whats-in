@@ -17,8 +17,8 @@ import { Item, PageWrapper, Badge } from "../styles";
 import TextLight from "../components/Text";
 import GoBackButton from "../components/BackButton";
 import Rating from "../components/RateButton";
-import Alert from "../components/Alert";
-import Loader from "../components/Spinner";
+import Alert from "../components/alert";
+import Loader from "../components/spinner";
 import Image from "next/image";
 
 interface movieType {
