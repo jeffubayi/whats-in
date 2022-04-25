@@ -2,7 +2,7 @@
 
 Search and view your favourite movies
 
-View deployed instance [whatsIn.com](http://localhost:3000)
+View deployed instance [whatsIn.com](https://whats-in-pi.vercel.app/)
 
 ### Technology
 
@@ -36,10 +36,10 @@ To test if any requests and responses are fetched from the omdb api endpoint
 i.e james bond movies
 
 ### get movies by name: 
- [http:localhost:3000/api/getMoviesByName?name=james bond](http:localhost:3000/api/getMoviesById?id=tt0366629)
+ [https://whats-in-pi.vercel.app/api/getMoviesByName?name=james bond](http:localhost:3000/api/getMoviesById?id=tt0366629)
 ### get movie by id :
 
- [http:localhost:3000/api/getMoviesById?id=tt0366629](http:localhost:3000/api/getMoviesById?id=tt0366629)
+ [https://whats-in-pi.vercel.app/api/getMoviesById?id=tt0366629](http:localhost:3000/api/getMoviesById?id=tt0366629)
   
 
 
