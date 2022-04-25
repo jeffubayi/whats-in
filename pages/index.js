@@ -4,7 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { Grid, InputAdornment, TextField } from "@mui/material";
 import { FormWrapper, PageWrapper } from "../styles";
 import Alert from "../components/Alert";
-import MovieCard from "../components/MovieCard";
+import MovieCard from "../components/movieCard";
 import { debounce } from "lodash";
 
 
