@@ -2,7 +2,10 @@
 
 Search and view your favourite movies
 
-View deployed instance [whatsIn.com](https://whats-in-pi.vercel.app/)
+<img width="1440" alt="Screenshot 2022-04-25 at 13 33 48" src="https://user-images.githubusercontent.com/47192245/165074847-96839bf6-64df-46a2-8acb-7224b4855f7f.png">
+
+<img width="1438" alt="Screenshot 2022-04-25 at 13 34 11" src="https://user-images.githubusercontent.com/47192245/165074859-0ddf3dc8-8621-491b-9712-a213acd56509.png">
+
 
 ### Technology
 
@@ -35,11 +38,13 @@ View deployed instance [whatsIn.com](https://whats-in-pi.vercel.app/)
 To test if any requests and responses are fetched from the omdb api endpoint
 i.e james bond movies
 
-### get movies by name: 
- [https://whats-in-pi.vercel.app/api/getMoviesByName?name=james bond](http:localhost:3000/api/getMoviesById?id=tt0366629)
+### get movies by name:
+
+ https://whats-in-pi.vercel.app/api/getMoviesByName?name=james bond
+ 
 ### get movie by id :
 
- [https://whats-in-pi.vercel.app/api/getMoviesById?id=tt0366629](http:localhost:3000/api/getMoviesById?id=tt0366629)
+ https://whats-in-pi.vercel.app/api/getMoviesById?id=tt0366629
   
 
 
