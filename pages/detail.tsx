@@ -14,9 +14,9 @@ import {
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import HubIcon from "@mui/icons-material/Hub";
 import { Item, PageWrapper, Badge } from "../styles";
-import TextLight from "../components/Text/Text";
-import GoBackButton from "../components/Button/BackButton";
-import Rating from "../components/Button/RateButton";
+import TextLight from "../components/Text";
+import GoBackButton from "../components/BackButton";
+import Rating from "../components/RateButton";
 import Alert from "../components/Alert";
 import Loader from "../components/Spinner";
 import Image from "next/image";

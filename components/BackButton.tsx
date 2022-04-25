@@ -1,5 +1,5 @@
 import { IconButton } from "@mui/material";
-import { Header } from "../../styles";
+import { Header } from "../styles";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useRouter } from "next/router";
 
