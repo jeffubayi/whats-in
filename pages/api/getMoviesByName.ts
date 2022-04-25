@@ -17,7 +17,7 @@ export default function handler(
   const movieName = req.query.name;
   if (movieName) {
     const getMoviesByName = async () => {
-      const url = `http://www.omdbapi.com/?s=${movieName}&apikey=${process.env.NEXT_PUBLIC_API_KEY}`;
+      const url = `http://www.omdbapi.com/?s=${movieName}&apikey=d3e8c483`;
       try {
         const response = await axios.get(url);
         const movieList = response.data.Search;
