@@ -10,7 +10,8 @@ import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Link from "next/link";
-import NoMovieAvailable from "../components/emptyMovie";
+import NoMovieAvailable from "./EmptyMovie";
+
 interface movieCard {
   movies: [
     {
@@ -28,13 +29,13 @@ const TextBody = ({ movies }: movieCard) => {
     let favoriteList: any = [];
     let favMovieId = movieId;
     favoriteList.push(favMovieId);
-    if (typeof window !== 'undefined') {
-    localStorage.setItem("movieId", favoriteList);
-  }
-
+    if (typeof window !== "undefined") {
+      localStorage.setItem("movieId", favoriteList);
+    }
   };
   //get favorite movies
-  let favoriteMovieId = typeof window !== 'undefined' ?  localStorage.getItem("movieId"): null;
+  let favoriteMovieId =
+    typeof window !== "undefined" ? localStorage.getItem("movieId") : null;
 
   return (
     <>
@@ -84,9 +85,9 @@ const TextBody = ({ movies }: movieCard) => {
                             defaultValue={
                               movie?.imdbID === favoriteMovieId ? 1 : 0
                             }
-                            icon={<FavoriteIcon fontSize="inherit" />}
+                            icon={<FavoriteIcon sx={{ fill:"#ffff"}} />}
                             emptyIcon={
-                              <FavoriteBorderIcon fontSize="inherit" />
+                              <FavoriteBorderIcon sx={{ fill:"#ffff"}} />
                             }
                           />
                         </IconButton>

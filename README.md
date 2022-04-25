@@ -15,7 +15,7 @@ View deployed instance [whatsIn.com](http://localhost:3000)
 
 ```bash
 # Checkout to the current branch
-  git checkout jeff
+  git clone https://github.com/jeffubayi/whats-in
 
 # install dependencies
   yarn 
